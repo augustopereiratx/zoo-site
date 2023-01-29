@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Animais - Zoológico de Guarulhos</title>
+    <link rel="icon" href="../resources/icons/favicon.png">
+    <meta charset="UTF-8"/>
+    <style type="text/css">
+      td {
+        padding: 0 20px;
+      }
+      @media screen and (min-width: 53.75em) {
+      td
+      {
+          padding:0 30px;
+      }}
+
+      </style>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
+    <link
+      href="https://fonts.googleapis.com/css?family=Permanent+Marker|Quicksand:300,500&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
+    <script type="text/javascript" src="../js/animals.js"></script>
+    
+  </head>
+  
+  <body class="body" id="body">
+    
+    <div
+      class="fixedtop"
+      id="fixedtop"
+    >
+      <nav class="menu">
+        <ul class="active">
+          <li><a class="options"href="index-english.html">Home</a></li>
+          <li class="current-item"><a>Animals</a></li>
+          <li><a class="options"href="directions.html">Directions</a></li>
+          <li><a class="options"href="faq.html">FAQ</a></li>
+          <li><a class="options"href="comments.html">Comments</a></li>
+          <li><a class="options"href="about.html">About</a></li>
+          <li><a class="options"href="../index.html">Português</a></li>
+          <li><a class="dark-toggle" id="dark-toggle" onclick="dark()">Dark Mode</a></li>
+          <script type="text/Javascript">
+          function dark() {
+            if(document.getElementById("dark-toggle").textContent == "Dark Mode"){
+              document.cookie = "; expires = Thu, 01 Jan 1970 00:00:00 GMT"
+              var element = document.getElementById("body");
+              element.classList.toggle("dark-mode");
+              var button1 = document.getElementById("button-birds");
+              button1.classList.toggle("animal-dark")
+              var button2 = document.getElementById("button-mammals");
+              button2.classList.toggle("animal-dark")
+              var button3 = document.getElementById("button-reptiles");
+              button3.classList.toggle("animal-dark")
+              var footer = document.getElementById("footer");
+              footer.classList.toggle("footer-dark");
+              document.getElementById("dark-toggle").textContent = "Light Mode";
+              document.cookie = "dark-mode; path=/; expires= Thu, 21 Aug 2037 20:00:00 UTC";
+          } else if(document.getElementById("dark-toggle").textContent == "Light Mode"){
+              document.cookie = "; expires = Thu, 01 Jan 1970 00:00:00 GMT"
+              var element = document.getElementById("body");
+              element.classList.toggle("dark-mode");
+              var button1 = document.getElementById("button-birds");
+              button1.classList.toggle("animal-dark")
+              var button2 = document.getElementById("button-mammals");
+              button2.classList.toggle("animal-dark")
+              var button3 = document.getElementById("button-reptiles");
+              button3.classList.toggle("animal-dark")
+              var footer = document.getElementById("footer");
+              footer.classList.toggle("footer-dark");
+              document.getElementById("dark-toggle").textContent = "Dark Mode";
+              document.cookie = "light-mode; path=/; expires= Thu, 21 Aug 2037 20:00:00 UTC";
+          }}
+            </script>
+        </ul>
+        <a class="toggle-nav" href="#">&#9776;</a>
+      </nav>
+      <div class="mobiletitle">
+        <a href="../index.html">
+        <img class="mobile-image" src="https://i.imgur.com/MKZDyDK.png?1">
+      </a>
+      </div>
+    </div>
+    </div>
+    <div id="page-container">
+        <div id="content-wrap">
+    <br><br><br><br>
+    <div class="animal-chooser">
+        <button id="button-birds" class="animal" onclick="displayAnimal()">AVES</button>
+        <script type="text/javascript">
+          function displayAnimal() {
+              document.getElementById("birds").style.display = "inline";
+              document.getElementById("mammals").style.display = "none";
+              document.getElementById("reptiles").style.display = "none"
+          }
+        </script>
+        <button id="button-mammals" class="animal" onclick="displayAnimal2()">MAMÍFEROS</button>
+        <script type="text/javascript">
+            function displayAnimal2() {
+              document.getElementById("mammals").style.display = "inline";
+              document.getElementById("birds").style.display = "none";
+              document.getElementById("reptiles").style.display = "none";
+          }
+          </script>
+        <button id="button-reptiles" class="animal" onclick="displayAnimal3()">RÉPTEIS</button>
+        <script>
+          function displayAnimal3(){
+            document.getElementById("reptiles").style.display = "inline";
+              document.getElementById("birds").style.display = "none";
+              document.getElementById("mammals").style.display = "none"
+          }
+          </script>
+    </div>
+    <div id="animals" class="animals">
+    <div id="birds" class="birds"><table class="animals-table"><tr> 
+    <h1 class="h1">AVES</h1>
+    
+    
+    <!--ANACÃ-->
+    <td><p>ANACÃ <br><b><i>(Deroptyus accipitrinus)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto61t.jpg">
+    <a class="link" href="Animais/Aves/anaca.html"><p><b>Ler mais...</b></p></a></td>
+
+    
+    
+      <!--Arara Canindé-->
+      <td><p>ARARA CANINDÉ <br><b><i>(Ara ararauna)</i></b></p>
+      
+      <img class="img" src="https://cdn.discordapp.com/attachments/687966923253612557/687969251952164916/foto17t.png">
+      <a class="link" href="Animais/Aves/arara_caninde.html"><p><b>Ler mais...</b></p></a></td></tr>
+
+      
+
+      <!--Arara Vermelha-->
+      <tr><td><p> ARARA VERMELHA <br><b><i>(Ara chloroptera)</i></b></p>
+      
+      <img class="img" src="https://cdn.discordapp.com/attachments/687966923253612557/687968818987008043/foto11t.png">
+      <a class="link" href="Animais/Aves/arara_vermelha.html"><p><b>Ler mais...</b></p></a></td>
+
+      
+    
+    <!--CARCARÁ-->
+    <td><p>CARCARÁ <br><b><i>(Caracara plancus)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto45t.jpg">
+    <a class="link" href="Animais/Aves/carcara.html"><p><b>Ler mais...</b></p></a></td></tr> 
+
+    
+    
+      <!--CISNE NEGRO-->
+      <tr><td><p>CISNE NEGRO <br><b><i>(Cignus atratus)</i></b></p>
+      
+      <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto34t.jpg">
+      <a class="link" href="Animais/Aves/cisne_negro.html"><p><b>Ler mais...</b></p></a></td>
+    
+    
+    
+    
+      <!--EMA-->
+      <td><p>EMA <br><b><i>(Rhea americana)</i></b></p>
+      
+      <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto29t.jpg">
+      <a class="link" href="Animais/Aves/ema.html"><p><b>Ler mais...</b></p></a></td></tr>
+
+      
+
+    <!--GANSO AFRICANO-->
+    <tr><td><p>GANSO AFRICANO <br><b><i>(Anser cygnoides)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto35t.jpg">
+    <a class="link" href="Animais/Aves/ganso_africano.html"><p><b>Ler mais...</b></p></a></td>
+    
+    
+        
+    <!--GAVIÃO CARIJÓ-->
+    <td><p>GAVIÃO CARIJÓ <br><b><i>(Rupornis magnirostris)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto39t.jpg">
+    <a class="link" href="Animais/Aves/gaviao_carijo.html"><p><b>Ler mais...</b></p></a></td></tr>
+
+    
+    
+    <!--GAVIÃO CARRAPATEIRO-->
+    <tr><td><p>GAVIÃO CARRAPATEIRO <br><b><i>(Milvago chimachima)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto40t.jpg">
+    <a class="link" href="Animais/Aves/gaviao_carrapateiro.html"><p><b>Ler mais...</b></p></a></td>
+
+    
+    
+    <!--GAVIÃO PERNILONGO-->
+    <td><p>GAVIÃO PERNILONGO <br><b><i>(Geranospiza caerulescens)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto41t.jpg">
+    <a class="link" href="Animais/Aves/gaviao_pernilongo.html"><p><b>Ler mais...</b></p></a></td></tr>
+
+    
+      
+    <!--GRALHA DO CAMPO-->
+    <tr><td><p>GRALHA DO CAMPO <br><b><i>(Cyanocorax cristatellus)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto86t.jpg">
+    <a class="link" href="Animais/Aves/gralha_do_campo.html"><p><b>Ler mais...</b></p></a></td>
+
+    
+        
+    <!--GRAÚNA-->
+    <td><p>GRAÚNA <br><b><i>(Molothrus oryzivorus)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto60t.jpg">
+    <a class="link" href="Animais/Aves/grauna.html"><p><b>Ler mais...</b></p></a></td></tr>
+
+    
+
+    <!--IRERÊ-->
+    <tr><td><p>IRERÊ <br><b><i>(Dendrocygna viduata)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto36t.jpg">
+    <a class="link" href="Animais/Aves/irere.html"><p><b>Ler mais...</b></p></a></td>
+    
+    
+     
+    <!--JACUGUAÇU-->
+    <td><p>JACUGUAÇU <br><b><i>(Penelope obscura)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto80t.jpg">
+    <a class="link" href="Animais/Aves/jacuguacu.html"><p><b>Ler mais...</b></p></a></td></tr>
+
+    
+        
+    <!--JANDAIA MARACANÃ-->
+    <tr><td><p>JANDAIA MARACANÃ <br><b><i>(Psittacara leucophthalmus)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto84t.jpg">
+    <a class="link" href="Animais/Aves/jandaia_maracana.html"><p><b>Ler mais...</b></p></a></td>
+
+    
+    
+    <!--JANDAIA MINEIRA-->
+    <td><p>JANDAIA MINEIRA <br><b><i>(Aratinga auricapillus)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto73t.jpg">
+    <a class="link" href="Animais/Aves/jandaia_mineira.html"><p><b>Ler mais...</b></p></a></td></tr>
+
+    
+    
+    <!--MAITACA DE CABEÇA AZUL-->
+    <tr><td><p>MAITACA DE CABEÇA AZUL <br><b><i>(Pionus mestruus)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto64t.jpg">
+    <a class="link" href="Animais/Aves/maitaca_de_cabeca_azul.html"><p><b>Ler mais...</b></p></a></td>
+
+    
+    
+    <!--MARACANÃ DO BURITI-->
+    <td><p>MARACANÃ DO BURITI <br><b><i>(Primolius maracana)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto70t.jpg">
+    <a class="link" href="Animais/Aves/maracana_do_buriti.html"><p><b>Ler mais...</b></p></a></td></tr>
+
+    
+   
+    <!--MARACANÃ NOBRE-->
+    <tr><td><p>MARACANÃ NOBRE <br><b><i>(Diopsitaca nobilis)</i></b></p>
+    <a class="link" href="Animais/Aves/maracana_nobre.html">
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto69t.jpg">
+    <p><b>Ler mais...</b></p></a></td>
+
+    
+    
+    <!--MARIANINHA DE CABEÇA AMARELA-->
+    <td><p>MARIANINHA DE CABEÇA AMARELA <br><b><i>(Pionites leucogaster)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto65t.jpg">
+    <a class="link" href="Animais/Aves/marianinha.html"><p><b>Ler mais...</b></p></a></td></tr>
+
+    
+    
+    <!--MOCHO ORELHUDO-->
+    <tr><td><p>MOCHO ORELHUDO <br><b><i>(Asio clamator)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto44t.jpg">
+    <a class="link" href="Animais/Aves/mocho_orelhudo.html"><p><b>Ler mais...</b></p></a></td> 
+
+    
+    <!--MUTUM CAVALO-->
+    <td><p>MUTUM CAVALO <br><b><i>(Pauxi tuberosa)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto76t.jpg">
+    <a class="link" href="Animais/Aves/mutum_cavalo.html"><p><b>Ler mais...</b></p></a></td></tr>
+
+    
+
+      <!--Mutum de penacho-->
+      <tr><td><p>MUTUM DE PENACHO <br><b><i>(Crax fasciolata)</i></b></p>
+      
+      <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto19t.jpg">
+      <a class="link" href="Animais/Aves/mutum_de_penacho.html"><p><b>Ler mais...</b></p></a></td>
+
+      
+
+      <!--MUTUM DO SUDESTE-->
+      <td><p>MUTUM DO SUDESTE <br><b><i>(Crax blumenbachii)</i></b></p>
+      
+      <img class="img"  src="https://cdn.discordapp.com/attachments/687966923253612557/687968308489617589/foto1t.png">
+      <a class="link" href="Animais/Aves/mutum_do_sudeste.html"><p><b>Ler Mais</b></p></a></td></tr>
+
+      
+
+      <!--Papagaio do Peito Roxo-->
+      <tr><td><p>PAPAGAIO DE PEITO ROXO <br><b><i>(Amazona vinacea)</i></b></p>
+      
+      <img class="img" src="https://cdn.discordapp.com/attachments/687966923253612557/687968414790189069/foto3t.png">
+      <a class="link" href="Animais/Aves/papagaio_de_peito_roxo.html"><p><b>Ler mais...</b></p></a></td>
+
+      
+
+      <!--PAPAGAIO VERDADEIRO-->
+      <td><p>PAPAGAIO VERDADEIRO <br><b><i>(Amazona aestiva)</i></b></p>
+      
+      <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto63t.jpg">
+      <a class="link" href="Animais/Aves/papagaio_verdadeiro.html"><p><b>Ler mais...</b></p></a></td></tr>
+
+      
+    
+      <!--PERIQUITO DE ENCONTRO AMARELO-->
+      <tr><td><p>PERIQUITO DE ENCONTRO AMARELO <br><b><i>(Brotogeris chiriri)</i></b></p>
+      
+      <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto68t.jpg">
+      <a class="link" href="Animais/Aves/periquito_encontro_amarelo.html"><p><b>Ler mais...</b></p></a></td> 
+
+      
+    
+      <!--PERIQUITO VERDE-->
+      <td><p>PERIQUITO VERDE <br><b><i>(Brotogeris tirica)</i></b></p>
+      
+      <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto66t.jpg">
+      <a class="link" href="Animais/Aves/periquito_verde.html"><p><b><Ler mais...</b></p></a></td></tr>
+
+      
+
+      <!--PICA-PAU BRANCO-->
+      <tr><td><p>PICA-PAU BRANCO <br><b><i>(Melanerpes candidus)</i></b></p>
+      
+      <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto59t.jpg">
+      <a class="link" href="Animais/Aves/pica_pau_branco.html"><p><b>Ler mais...</b></p></a></td>
+
+      
+
+    <!--SERIEMA-->
+    <td><p>SERIEMA <br><b><i>(Cariama cristata)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto87t.jpg">
+    <a class="link" href="Animais/Aves/seriema.html"><p><b>Ler mais...</b></p></a></td></tr>
+
+    
+    
+    <!--SUINDARA-->
+    <tr><td><p>SUINDARA <br><b><i>(Tyto furcata)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto43t.jpg">
+    <a class="link" href="Animais/Aves/suindara.html"><p><b>Ler mais...</b></p></a></td>
+
+    
+    
+    <!--TIRIBA DE TESTA VERMELHA-->
+    <td><p>TIRIBA DE TESTA VERMELHA <br><b><i>(Pyrrhura frontalis)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto71t.jpg">
+    <a class="link" href="Animais/Aves/tiriba_de_testa_vermelha.html"><p><b>Ler mais...</b></p></a></td></tr>
+
+    
+
+    <!--TUCANO DE BICO VERDE-->
+    <tr><td><p>TUCANO DE BICO VERDE <br><b><i>(Ramphastos dicolorus)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto81t.jpg">
+    <a class="link" href="Animais/Aves/tucano_de_bico_verde.html"><p><b>Ler mais...</b></p></a></td>
+
+    
+    
+    <!--TUCANO DE PEITO BRANCO-->
+    <td><p>TUCANO DE PEITO BRANCO <br><b><i>(Ramphastos tucanus)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto82t.jpg">
+    <a class="link" href="Animais/Aves/tucano_de_peito_branco.html"><p><b>Ler mais...</b></p></a></td></tr> 
+
+    
+    
+    <!--TUCANO TOCO-->
+    <tr><td><p>TUCANO TOCO <br><b><i>(Ramphastos toco)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto83t.jpg">
+    <a class="link" href="Animais/Aves/tucano_toco.html"><p><b>Ler mais...</b></p></a></td>
+
+    
+    
+    <!--TURACO DE FACE BRANCA-->
+    <td><p>TURACO DE FACE BRANCA <br><b><i>(Tauraco leucotis)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto79t.jpg">
+    <a class="link" href="Animais/Aves/turaco_de_face_branca.html"><p><b>Ler mais...</b></p></a></td></tr>
+
+    
+ 
+    <!--URUBU COMUM-->
+    <tr><td><p>URUBU COMUM <br><b><i>(Coragyps atratus)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto42t.jpg">
+    <a class="link" href="Animais/Aves/urubu_comum.html"><p><b>Ler mais...</b></p></a></td>
+
+    
+
+      <!--Urubu Rei-->
+      <td><p>URUBU REI <br><b><i>(Sarcoramphus papa)</i></b></p>
+      
+      <img class="img" src="https://cdn.discordapp.com/attachments/687966923253612557/687968977640751109/foto16t.png">
+      <a class="link" href="Animais/Aves/urubu_rei.html"><p><b>Ler mais...</b></p></a></td></tr></table>
+
+      
+    
+    <!--URUMUTUM-->
+    <p>URUMUTUM <br><b><i>(Nothocrax urumutum)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto78t.jpg">
+    <a class="link" href="Animais/Aves/urumutum.html"><p><b>Ler mais...</b></p></a> 
+
+    
+
+    </div>
+    
+    
+    
+    <div id="mammals" class="mammals">
+    <h1 class="h1">MAMÍFEROS</h1><table class="animals-table">
+
+    
+
+    <!--ANTA-->
+    <tr><td><p>ANTA <br><b><i>(Tapirus terrestris)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto23t.jpg">
+    <a class="link" href="Animais/Mamiferos/anta.html"><p><b>Ler mais...</b></p></a></td>
+
+    
+
+    <!--BUGIO-RUIVO-->
+    <td><p>BUGIO-RUIVO <br><b><i>(Alouatta clamitans)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto27t.jpg">
+    <a class="link" href="Animais/Mamiferos/bugio_ruivo.html"><p><b>Ler mais...</b></p></a></td></tr>
+
+    
+
+    <!--CAPIVARA-->
+    <tr><td><p>CAPIVARA <br><b><i>(Hydrochaeris hydrochaeris)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto93t.jpg">
+    <a class="link" href="Animais/Mamiferos/capivara.html"><p><b>Ler mais...</b></p></a></td>
+
+    
+
+    <!--CATETO-->
+    <td><p>CATETO <br><b><i>(Tayassu tajacu)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto15t.jpg">
+    <a class="link" href="Animais/Mamiferos/cateto.html"><p><b>Ler mais...</b></p></a></td></tr>
+
+    
+
+    <!--FURÃO-->
+    <tr><td><p>FURÃO <br><b><i>(Galictis cuja)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto55t.jpg">
+    <a class="link" href="Animais/Mamiferos/furao.html"><p><b>Ler mais...</b></p></a></td>
+
+    
+
+    <!--GATO DO MATO PEQUENO-->
+    <td><p>GATO DO MATO PEQUENO <br><b><i>(Leopardus tigrinus)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto6t.jpg">
+    <a class="link" href="Animais/Mamiferos/gato_do_mato_pequeno.html"><p><b>Ler mais...</b></p></a></td></tr>
+
+    
+
+    <!--GATO MOURISCO-->
+    <tr><td><p>GATO MOURISCO <br><b><i>(Puma yagouaroundi)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto91t.jpg">
+    <a class="link" href="Animais/Mamiferos/gato_mourisco.html"><p><b>Ler mais...</b></p></a></td>
+
+    
+
+    <!--LEÃO-->
+    <td><p>LEÃO  <br><b><i>(Panthera leo)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto89t.jpg">
+    <a class="link" href="Animais/Mamiferos/leao.html"><p><b>Ler mais...</b></p></a></td></tr>
+
+    
+
+    <!--LOBO GUARÁ-->
+    <tr><td><p>LOBO GUARÁ <br><b><i>(Chrysocyon brachyurus)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto5t.jpg">
+    <a class="link" href="Animais/Mamiferos/lobo_guara.html"><p><b>Ler mais...</b></p></a></td>
+
+    
+    
+    <!--LONTRA-->
+    <td><p>LONTRA <br><b><i>(Lontra longicaudis)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto13t.jpg">
+    <a class="link" href="Animais/Mamiferos/lontra.html"><p><b>Ler mais...</b></p></a></td></tr>
+
+    
+
+    <!--MICO-LEÃO-DE-CARA-DOURADA-->
+    <tr><td><p>MICO-LEÃO-DE-CARA-DOURADA <br><b><i>(Leontopithecus chrysomelas)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto25t.jpg">
+    <a class="link" href="Animais/Mamiferos/mico_leao_de_cara_dourada.html"><p><b>Ler mais...</b></p></a></td>
+
+    
+
+    <!--ONÇA PARDA-->
+    <td><p>ONÇA PARDA <br><b><i>(Puma concolor)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto9t.jpg">
+    <a class="link" href="Animais/Mamiferos/onca_parda.html"><p><b>Ler mais...</b></p></a></td></tr>
+
+    
+
+    <!--ONÇA PINTADA-->
+    <tr><td><p>ONÇA PINTADA <br><b><i>(Panthera onca)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto7t.jpg">
+    <a class="link" href="Animais/Mamiferos/onca_pintada.html"><p><b>Ler mais...</b></p></a></td>
+
+    
+
+    <!--QUATI-->
+    <td><p>QUATI <br><b><i>(Nasua nasua)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto57t.jpg">
+    <a class="link" href="Animais/Mamiferos/quati.html"><p><b>Ler mais...</b></p></a></td>
+
+    
+
+    <!--SAGUI-DA-SERRA-ESCURO-->
+    <tr><td><p>SAGUI-DA-SERRA-ESCURO <br><b><i>(Callithrix aurita)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto26t.jpg">
+    <a class="link" href="Animais/Mamiferos/sagui_da_serra_escuro.html"><p><b>Ler mais...</b></p></a></td>
+
+    
+
+    <!--SAGUI DE TUFO BRANCO-->
+    <td><p>SAGUI DE TUFO BRANCO <br><b><i>(Callithrix jacchus)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto31t.jpg">
+    <a class="link" href="Animais/Mamiferos/sagui_de_tufo_branco.html"><p><b>Ler mais...</b></p></a></td></tr>
+
+    
+
+    <!--SAUÁ-->
+    <tr><td><p>SAUÁ <br><b><i>(Callicebus nigrifrons)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto32t.jpg">
+    <a class="link" href="Animais/Mamiferos/saua.html"><p><b>Ler mais...</b></p></a></td>
+
+    
+
+    <!--TAMANDUÁ BANDEIRA-->
+    <td><p>TAMANDUÁ BANDEIRA <br><b><i>(Myrmecophaga tridactyla)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto21t.jpg">
+    <a class="link" href="Animais/Mamiferos/tamandua_bandeira.html"><p><b>Ler mais...</b></p></a></td></tr></table>
+
+    
+
+    <!--VEADO CATINGUEIRO-->
+    <p>VEADO CATINGUEIRO <br><b><i>(Mazama gouazoubira)</i></b></p>
+    
+    <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto46t.jpg">
+    <a class="link" href="Animais/Mamiferos/veado_catingueiro.html"><p><b>Ler mais...</b></p></a>
+
+    
+
+    </div>
+
+    <div id="reptiles" class="reptiles">
+      <h1 class="h1">RÉPTEIS</h1><table class="animals-table">
+
+      
+      
+      <!--CÁGADO CABEÇUDO-->
+      <tr><td><p>CÁGADO CABEÇUDO <br><b><i>(Mesoclemmys tuberculatas)</i></b></p>
+      
+      <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto51t.jpg">
+      <a class="link" href="Animais/Repteis/cagado_cabecudo.html"><p><b>Ler mais...</b></p></a></td>
+
+      
+
+      <!--CÁGADO DE BARBICHA-->
+      <td><p>CÁGADO DE BARBICHA <br><b><i>(Phrynops geoffroanus)</i></b></p>
+      
+      <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto37t.jpg">
+      <a class="link" href="Animais/Repteis/cagado_de_barbicha.html"><p><b>Ler mais...</b></p></a></td></tr>
+
+      
+      
+      <!--IGUANA-->
+      <tr><td><p>IGUANA <br><b><i>(Iguana iguana)</i></b></p>
+      
+      <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto50t.jpg">
+      <a class="link" href="Animais/Repteis/iguana.html"><p><b>Ler mais...</b></p></a></td>
+
+      
+
+      <!--JABUTI PIRANGA-->
+      <td><p>JABUTI PIRANGA <br><b><i>(Chelonoidis carbonaria)</i></b></p>
+      
+      <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto48t.jpg">
+      <a class="link" href="Animais/Repteis/jabuti_piranga.html"><p><b>Ler mais...</b></p></a></td></tr>
+
+      
+
+      <!--JACARÉ DO PAPO AMARELO-->
+      <tr><td><p>JACARÉ DO PAPO AMARELO <br><b><i>(Caiman latirostris)</i></b></p>
+      
+      <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto58t.jpg">
+      <a class="link" href="Animais/Repteis/jacare_do_papo_amarelo.html"><p><b>Ler mais...</b></p></a></td>
+
+      
+
+      
+
+      <!--JIBOIA-->
+      <td><p>JIBOIA <br><b><i>(Boa constrictor)</i></b></p>
+      
+      <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto54t.jpg">
+      <a class="link" href="Animais/Repteis/jiboia.html"><p><b>Ler mais...</b></p></a></td></tr>
+
+      
+
+      <!--TARTARUGA DO RIO COOTER-->
+      <tr><td><p>TARTARUGA DO RIO COOTER <br><b><i>(Pseudemys conccinna)</i></b></p>
+      
+      <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto53t.jpg">
+      <a class="link" href="Animais/Repteis/tartaruga_do_rio_cooter.html"><p><b>Ler mais...</b></p></a></td>
+
+      
+
+      <!--TARTARUGA MORDEDORA-->
+      <td><p>TARTARUGA MORDEDORA <br><b><i>(Chelydra serpentina)</i></b></p>
+      
+      <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto52t.jpg">
+      <a class="link" href="Animais/Repteis/tartaruga_mordedora.html"><p><b>Ler mais...</b></p></a></td></tr>
+
+      
+
+      <!--TARTARUGA DE ORELHA VERMELHA-->
+      <tr><td><p>TARTARUGA DE ORELHA VERMELHA <br><b><i>(Trachemys s.elegans)</i></b></p>
+      
+      <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto38t.jpg">
+      <a class="link" href="Animais/Repteis/tartaruga_orelha_vermelha.html"><p><b>Ler mais...</b></p></a></td>
+
+      
+
+      <!--TEIÚ ARGENTINO-->
+      <td><p>TEIÚ ARGENTINO <br><b><i>(Tupinambis rufescens)</i></b></p>
+      
+      <img class="img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto49t.jpg">
+      <a class="link" href="Animais/Repteis/teiu_argentino.html"><p><b>Ler mais...</b></p></a></td></tr></table>
+
+      
+
+    </div>
+
+
+
+
+
+    </div>
+  
+  
+  
+  
+  </div>
+  <div id="footer" class="footer">
+      <p style="font-family: 'Quicksand', sans-serif; font-weight: 500; color: #777777;">2020 Bergamota Sites LTDA &copy;</p><p style="font-family: 'Quicksand', sans-serif; font-weight: 500; color: #777777;">Images Taken From The Internet</p>
+    </div>
+</div>
+</div>
+    </body>
+</html>

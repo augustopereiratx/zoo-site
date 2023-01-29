@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zoológico de Guarulhos</title>
+    <link rel="icon" href="resources/icons/favicon.png">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Permanent+Marker|Quicksand:300,500&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/closed.js"></script>
+    <script type="text/javascript" src="js/pictures.js"></script>
+    <script type="text/javascript" src="js/roullete.js"></script>
+    <style type="text/css">
+      td {
+        padding: 0 20px;
+        vertical-align: top;
+      }
+      @media screen and (min-width: 53.75em) {
+      td
+      {
+          padding:0 30px;
+          vertical-align: top;
+      }
+      .index-single-div {
+        padding: 0 20px;
+      }}
+
+      </style>
+  </head>
+
+  <body class="body" id="body">
+        
+    <div
+      class="fixedtop"
+      id="fixedtop"
+    >
+      <nav class="menu">
+        <ul class="active">
+          <li class="current-item"><a>Início</a></li>
+          <li><a class="options"href="./Portugues/animais.html">Animais</a></li>
+          <li><a class="options"href="./Portugues/comochegar.html">Como Chegar</a></li>
+          <li><a class="options"href="./Portugues/duvidas.html">Dúvidas</a></li>
+          <li><a class="options"href="./Portugues/comentarios.html">Comentários</a></li>
+          <li><a class="options"href="./Portugues/sobre.html">Sobre</a></li>
+          <li><a class="options"href="./Ingles/index-english.html">English</a></li>
+          <li><a class="dark-toggle" id="dark-toggle" onclick="dark()">Modo Escuro</a></li>
+          <script type="text/Javascript">
+          function dark() {
+            if(document.getElementById("dark-toggle").textContent == "Modo Escuro"){
+              document.cookie = "; expires = Thu, 01 Jan 1970 00:00:00 GMT"
+              var element = document.getElementById("body");
+              element.classList.toggle("dark-mode");
+              var footer = document.getElementById("footer");
+              footer.classList.toggle("footer-dark");
+              document.getElementById("dark-toggle").textContent = "Modo Claro";
+              document.cookie = "dark-mode; path=/; expires= Thu, 21 Aug 2037 20:00:00 UTC";
+          } else if(document.getElementById("dark-toggle").textContent == "Modo Claro"){
+              document.cookie = "; expires = Thu, 01 Jan 1970 00:00:00 GMT"
+              var element = document.getElementById("body");
+              element.classList.toggle("dark-mode");
+              var footer = document.getElementById("footer");
+              footer.classList.toggle("footer-dark");
+              document.getElementById("dark-toggle").textContent = "Modo Escuro";
+              document.cookie = "light-mode; path=/; expires= Thu, 21 Aug 2037 20:00:00 UTC";
+          }}
+          </script>
+        </ul>
+        <a class="toggle-nav" href="#">&#9776;</a>
+      </nav>
+      <div class="mobiletitle">
+        <a href="./index.html">
+        <img class="mobile-image" src="https://i.imgur.com/MKZDyDK.png?1">
+      </a>
+      </div>
+    </div>
+    </div>
+    
+    <div id="page-container-index">
+    <div id="content-wrap">
+    <center><div id="logo-div" class="logo-div"><img class="roullete-logo" src="http://i.imgur.com/MKZDyDK.png?1"></center>
+      <br>
+      <div class="roullete"><div class="black-filter"></div><div class="pictures">
+        
+          
+          <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="https://images8.alphacoders.com/565/thumb-1920-565397.jpg" 
+            style="width:100%" />
+          </div>
+  
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img
+              src="https://www.guarulhos.sp.gov.br/sites/default/files/styles/100_/public/Anta%20e%20jasmim_Foto%20N%C3%ADcollas%20Ornelas%2001.jpg?itok=xM1ZRNMC"
+              style="width:100%"
+            />
+          </div>
+  
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img
+              src="https://www.infoescola.com/wp-content/uploads/2008/05/onca-pintada-591459416.jpg"
+              style="width:100%"
+            />
+          </div>
+          
+        </div>
+      </div></div>
+      <div id="text" class="text">
+      <div id="closed" class="closed"><p>O zoológico está fechado no momento. Veja o <a class="link" href="./Portugues/duvidas.html">horário de funcionamento</a>.</p></div>
+      
+      <table class="index-table">
+      <tr><td><div class="index-div">
+          <h1 class="index-title">Animais Silvestres</h1>
+          <p>O Zoológico de Guarulhos, mantém cerca de 500 animais, de 100 diferentes espécies, priorizando a fauna nacional, com 91% de espécies nativas.</p>
+        </div></td>
+        
+        <td><div class="index-div">
+          <h1 class="index-title">Animais de Vida Livre</h1>
+          <p>O Zoo possui uma área de mata e lagos que atraem muitas espécies de aves de vida livre, que podem ser observadas e fotografadas facilmente.</p>
+        </div></td></tr>
+
+        <tr><td><div class="index-div">
+          <h1 class="index-title">Pesquisa e Conservação</h1>
+          <p> O Zoo de Guarulhos desenvolve pesquisas em áreas da medicina veterinária e biologia por seu corpo técnico, e também participa de projetos de outras instituições, como programas de mestrado, doutorado e iniciação científica.</p>
+        </div></td>
+          
+        <td><div class="index-div">
+          <h1 class="index-title">Vegetação Nativa</h1>
+          <p>O Zoo de Guarulhos mantém uma rica vegetação com árvores exóticas e nativas que proporciona uma linda paisagem e ainda contribui com a alimentação das nossas aves.</p>
+        </div></td></tr>
+      </table>
+
+      <div class="index-mobile">
+        <div class="index-mobile-logo-bg">
+        <img class="index-mobile-logo" src="https://i.imgur.com/MKZDyDK.png?1">
+        </div>
+          <div class="index-div">
+              <h1 class="index-title" style="text-align: center;">Animais Silvestres</h1>
+              <p>O Zoológico de Guarulhos, mantém cerca de 500 animais, de 100 diferentes espécies, priorizando a fauna nacional, com 91% de espécies nativas.</p>
+          </div>
+            
+          <div class="index-div">
+              <h1 class="index-title" style="text-align: center;">Animais de Vida Livre</h1>
+              <p>O Zoo possui uma área de mata e lagos que atraem muitas espécies de aves de vida livre, que podem ser observadas e fotografadas facilmente.</p>
+          </div>
+    
+          <div class="index-div">
+              <h1 class="index-title" style="text-align: center;">Pesquisa e Conservação</h1>
+              <p> O Zoo de Guarulhos desenvolve pesquisas em áreas da medicina veterinária e biologia por seu corpo técnico, e também participa de projetos de outras instituições, como programas de mestrado, doutorado e iniciação científica.</p>
+          </div>
+              
+          <div class="index-div">
+              <h1 class="index-title" style="text-align: center;">Vegetação Nativa</h1>
+              <p>O Zoo de Guarulhos mantém uma rica vegetação com árvores exóticas e nativas que proporciona uma linda paisagem e ainda contribui com a alimentação das nossas aves.</p>
+          </div>
+      </div>
+
+      <div style="border-top-style: solid;" class="index-single-div">
+          <h1 class="h1" style="text-align: center;">Animais</h1>
+          <p>O zoológico abriga inúmeras espécies de animais. Nesta página você pode ver a lista das espécies, organizadas em três categorias, para encontrar o animal de sua escolha facilmente.</p>
+          <a href="Portugues/animais.html" class="link"><p style="text-align: center;">Página dos Animais...</p></a>
+      </div>
+      <div style="border-top-style: solid;" class="index-single-div">
+        <h1 class="h1" style="text-align: center;">Como Chegar no Zoo</h1>
+        <p>É muito simples de chegar no zoológico! Veja o endereço e o mapa do Google Maps nesta página.</p>
+        <a href="Portugues/comochegar.html" class="link"><p style="text-align: center;">Página do Endereço...</p></a>
+      </div>
+      
+      
+    </div>
+    </div>
+    <div id="footer" class="footer" style="bottom: -9em;">
+      <p style="font-family: 'Quicksand', sans-serif; font-weight: 500; color: #777777;">2020 Bergamota Sites LTDA &copy;</p><p style="font-family: 'Quicksand', sans-serif; font-weight: 500; color: #777777;">Fotos Retiradas da Internet</p>
+    </div>
+  </div>  
+  </div>
+    </body>
+</html>

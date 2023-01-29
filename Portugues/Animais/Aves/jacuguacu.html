@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jacuguaçu - Zoológico de Guarulhos</title>
+    <link rel="icon" href="../../../resources/icons/favicon.png">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
+    <link
+      href="https://fonts.googleapis.com/css?family=Permanent+Marker|Quicksand:300,500&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
+    <script type="text/javascript" src="../../../js/index.js"></script>
+  </head>
+
+  <body class="body" id="body">
+    <div
+      class="fixedtop"
+      id="fixedtop"
+    >
+      <nav class="menu">
+        <ul class="active">
+          <li><a href="">Início</a></li>
+          <li class="current-item"><a href="../../animais.html">Animais</a></li>
+          <li><a href="../../comochegar.html">Como Chegar</a></li>
+          <li><a href="../../duvidas.html">Dúvidas</a></li>
+          <li><a href="../../comentarios.html">Comentários</a></li>
+          <li><a href="../../sobre.html">Sobre</a></li>
+          <li><a href="../../../Ingles/index-english.html">English</a></li>
+          <li><a class="dark-toggle" id="dark-toggle" onclick="dark()">Modo Escuro</a></li>
+          <script type="text/Javascript">
+          function dark() {
+            if(document.getElementById("dark-toggle").textContent == "Modo Escuro"){
+              document.cookie = "; expires = Thu, 01 Jan 1970 00:00:00 GMT"
+              var element = document.getElementById("body");
+              element.classList.toggle("dark-mode");
+              var footer = document.getElementById("footer");
+              footer.classList.toggle("footer-dark");
+              document.getElementById("dark-toggle").textContent = "Modo Claro";
+              document.cookie = "dark-mode; path=/; expires= Thu, 21 Aug 2037 20:00:00 UTC";
+          } else if(document.getElementById("dark-toggle").textContent == "Modo Claro"){
+              document.cookie = "; expires = Thu, 01 Jan 1970 00:00:00 GMT"
+              var element = document.getElementById("body");
+              element.classList.toggle("dark-mode");
+              var footer = document.getElementById("footer");
+              footer.classList.toggle("footer-dark");
+              document.getElementById("dark-toggle").textContent = "Modo Escuro";
+              document.cookie = "light-mode; path=/; expires= Thu, 21 Aug 2037 20:00:00 UTC";
+          }}
+            </script>
+        </ul>
+        <a class="toggle-nav" href="#">&#9776;</a>
+      </nav>
+      <div class="mobiletitle">
+        <a href="./index-english.html">
+        <img class="mobile-image" src="https://i.imgur.com/MKZDyDK.png?1">
+      </a>
+      </div>
+    </div>
+    </div>
+    
+    <center><div class="profile-main">
+    <div class="profile-pic-div">
+      <img class="profile-img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto80t.jpg">
+    </div>
+    <h1 class="h1" class="profile-name">JACUGUAÇU</h1></center>
+  </div>
+  <div id="page-container">
+      <div id="content-wrap">
+    <div id="text" class="text" style="margin: 1em;">
+     <p>Espécie meridional de tamanho avantajado, medindo 68 a 75 centímetros e pesando 1.000 a 1.200 gramas (SIGRIST, T., 2009).
+        Coloração verde-bronze bem escura; manto, pescoço e peito finamente estriados de branco; pernas anegradas. O macho possui a íris vermelha, ao contrário da fêmea. Espécie grande e barulhenta, notável pelo ruído esquisito e fortíssimo que produz com as asas enquanto voa.
+        É por vezes confundida com o jacupemba (Penelope superciliaris). O jacuaçu é maior, mais escuro (Penelope obscura) e possui a íris castanha. O jacupemba é menor que o jacuaçu, possui o dorso mais claro (tons de marrom, com bordas das asas ferrugíneas),
+         sua íris é avermelhada e há uma faixa branca/cinza clara na sobrancelha que lhe dá o nome específico (P. superciliaris).</p><br><a class="link" href="../../animais.html"><p><b>voltar...</b></p><s são amarelos e/a>
+    </div>
+
+  </div>
+    <div id="footer" class="footer">
+      <p style="font-family: 'Quicksand', sans-serif; font-weight: 500; color: #777777;">2020 Bergamota Sites LTDA &copy;</p><p style="font-family: 'Quicksand', sans-serif; font-weight: 500; color: #777777;">Fotos Retiradas da Internet</p>
+    </div>
+  </div>
+    </body>
+</html>

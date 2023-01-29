@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Comentários - Zoológico de Guarulhos</title>
+    <link rel="icon" href="../resources/icons/favicon.png">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Permanent+Marker|Quicksand:300,500&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      td {
+        padding: 0 20px;
+        vertical-align: top;
+      }
+      @media screen and (min-width: 53.75em) {
+      td
+      {
+          padding:0 30px;
+          vertical-align: top;
+      }}
+
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
+    <script type="text/javascript" src="../js/comments.js"></script>
+  </head>
+
+  <body class="body" id="body">
+
+    <div
+      class="fixedtop"
+      id="fixedtop"
+    >
+      <nav class="menu">
+        <ul class="active">
+          <li><a class="options"href="../index.html">Início</a></li>
+          <li><a class="options"href="./animais.html">Animais</a></li>
+          <li><a class="options"href="./comochegar.html">Como Chegar</a></li>
+          <li><a class="options"href="./duvidas.html">Dúvidas</a></li>
+          <li class="current-item"><a>Comentários</a></li>
+          <li><a class="options"href="./sobre.html">Sobre</a></li>
+          <li><a class="options"href="../Ingles/index-english.html">English</a></li>
+          <li><a class="dark-toggle" id="dark-toggle" onclick="dark()">Modo Escuro</a></li>
+          <script type="text/Javascript">
+          function dark() {
+            if(document.getElementById("dark-toggle").textContent == "Modo Escuro"){
+              document.cookie = "; expires = Thu, 01 Jan 1970 00:00:00 GMT"
+              var element = document.getElementById("body");
+              element.classList.toggle("dark-mode");
+              var footer = document.getElementById("footer");
+              footer.classList.toggle("footer-dark");
+              var cols = document.getElementsByClassName("text-div");
+              var i = 0;
+              for (i = 0; i < cols.length; i++) {
+              cols[i].classList.toggle("text-div-dark");
+              }
+              var cols = document.getElementsByClassName("text-box");
+              var i = 0;
+              for (i = 0; i < cols.length; i++) {
+              cols[i].classList.toggle("text-box-dark");
+              }
+              var cols = document.getElementsByClassName("button");
+              var i = 0;
+              for (i = 0; i < cols.length; i++) {
+              cols[i].classList.toggle("button-dark");
+              }
+              document.getElementById("text-area").classList.toggle("text-area-dark");
+              document.getElementById("credentials").classList.toggle("credentials-dark");
+              document.getElementById("dark-toggle").textContent = "Modo Claro";
+              document.cookie = "dark-mode; path=/; expires= Thu, 21 Aug 2037 20:00:00 UTC";
+          } else if(document.getElementById("dark-toggle").textContent == "Modo Claro"){
+              document.cookie = "; expires = Thu, 01 Jan 1970 00:00:00 GMT"
+              var element = document.getElementById("body");
+              element.classList.toggle("dark-mode");
+              var footer = document.getElementById("footer");
+              footer.classList.toggle("footer-dark");
+              var cols = document.getElementsByClassName("text-div");
+              var i = 0;
+              for (i = 0; i < cols.length; i++) {
+              cols[i].classList.toggle("text-div-dark");
+              }
+              var cols = document.getElementsByClassName("text-box");
+              var i = 0;
+              for (i = 0; i < cols.length; i++) {
+              cols[i].classList.toggle("text-box-dark");
+              }
+              var cols = document.getElementsByClassName("button");
+              var i = 0;
+              for (i = 0; i < cols.length; i++) {
+              cols[i].classList.toggle("button-dark");
+              }
+              document.getElementById("text-area").classList.toggle("text-area-dark");
+              document.getElementById("credentials").classList.toggle("credentials-dark");
+              document.getElementById("dark-toggle").textContent = "Modo Escuro";
+              document.cookie = "light-mode; path=/; expires= Thu, 21 Aug 2037 20:00:00 UTC";
+          }}
+            </script>
+        </ul>
+        <a class="toggle-nav" href="#">&#9776;</a>
+      </nav>
+      <div class="mobiletitle">
+        <a href="../index.html">
+        <img class="mobile-image" src="https://i.imgur.com/MKZDyDK.png?1">
+      </a>
+      </div>
+    </div>
+    </div>
+    <div id="page-container">
+    <div id="content-wrap">
+      
+   <div id="text" class="text"><center><h1 class="h1">COMENTÁRIOS</h1></center>
+    
+    <div style="width: 100%; text-align: right; margin-bottom: 2em"><a class="link" onclick="commentPopup()"><b><u>Deixe seu comentário!</u></b></a></div>
+
+    <script type="text/javascript">
+
+      function commentPopup() {
+        if( /Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(navigator.userAgent) ) {
+        document.getElementById("body").style.overflowY = "hidden";
+        document.getElementById("comment-popup").style.display = "inline-block";
+        setTimeout(() => {
+          document.getElementById("credentials").style.width = "95vw";
+          document.getElementById("credentials").style.height = "95vh";
+        }, 10);
+        setTimeout(() => {
+        document.getElementById("comment-form").style.display = "inline-block";
+        }, 300);
+     }else {
+        document.getElementById("body").style.overflowY = "hidden";
+        document.getElementById("comment-popup").style.display = "inline-block";
+        setTimeout(() => {
+          document.getElementById("credentials").style.width = "75vw";
+          document.getElementById("credentials").style.height = "80vh";
+        }, 10);
+        setTimeout(() => {
+        document.getElementById("comment-form").style.display = "inline-block";
+        }, 300);
+      }
+    }
+    </script>
+
+    <div id="comment-popup">
+      <div class="comment-credentials" id="credentials">
+        <form class="comment-form" id="comment-form" name="commentForm" method="GET" action="../jsp/grava.jsp">
+              
+              <p class="credentials-text">Nome:</p>
+              <input class="text-box" placeholder="Digite seu nome" maxlength="25" type="text" name="name">
+              
+              <p class="credentials-text">E-mail:</p>
+              <input class="text-box" placeholder="Digite seu email" maxlength="50" type="text" name="email">
+              
+              <p class="credentials-text">Telefone:</p>
+              <input class="text-box" placeholder="(XX) XXXXX-XXXX" maxlength="16" type="text" name="phone">
+              
+              <p class="credentials-text">Seu comentário:</p>
+              <textarea class="text-area" maxlength="1000" id="text-area" style="margin-bottom: 1em;" name="comment" placeholder="Sobre o quê gostaria de falar?"></textarea><br>
+              <a class="link" style="padding: 0.5em;float: left;" onclick="commentClose()">Fechar</a>
+              <input class="button" style="padding: 1em; width: 5em; text-align: center; float: right;" type="button" onclick="verify()" value="Enviar">
+        </form>
+        <script type="text/javascript">
+
+          function commentClose() {
+            document.getElementById("body").style.overflowY = "";
+            document.getElementById("comment-form").style.display = "none";
+            document.getElementById("credentials").style.width = "1vw";
+            document.getElementById("credentials").style.height = "1vh";
+            setTimeout(() => {
+              document.getElementById("comment-popup").style.display = "none";
+            }, 250);
+          }
+    
+        </script>
+            <script type="text/javascript">
+
+              function verify() {
+                        var n;
+                        n = document.commentForm.name.value;
+                        var e;
+                        e = document.commentForm.email.value;
+                        var p;
+                        p = document.commentForm.phone.value;
+                        var verifica = 0;
+                        var c;
+                        c = document.commentForm.comment.value;
+                        var verifica = 0;
+        
+                        if(n.length == 0) {
+                            document.commentForm.name.focus();
+                            var verifica = 1;
+                            document.commentForm.name.style.borderColor = "#d80000";
+                        }else{
+                          document.commentForm.name.style.borderColor = "";
+                        }
+                        if(e.length == 0 || (e.indexOf("@") && e.indexOf("@") <0)) {
+                            document.commentForm.email.focus();
+                            var verifica = 1;
+                            document.commentForm.email.style.borderColor = "#d80000";
+                        }else{
+                          document.commentForm.email.style.borderColor = "";
+                        }
+                        if(p.length == 0) {
+                            document.commentForm.phone.focus();
+                            var verifica = 1;
+                            document.commentForm.phone.style.borderColor = "#d80000";
+                        }else{
+                          document.commentForm.phone.style.borderColor = "";
+                        }
+                        if(c.length == 0) {
+                            document.commentForm.comment.focus();
+                            var verifica = 1;
+                            document.commentForm.comment.style.borderColor = "#d80000";
+                        }else{
+                          document.commentForm.comment.style.borderColor = "";
+                        }
+                        if(verifica == 1){
+                            return false;
+                        }
+                      document.commentForm.submit();
+                    }
+              
+            </script>
+      </div>
+    </div>
+    <div class="comment-container">
+      <p class="comment-name">NAME_EXAMPLE</p>
+      <div class="text-div">
+        <p class="comment-content">COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT
+          COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT
+          COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT
+          COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT
+          COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT
+          COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT
+          COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT 
+          COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT
+          COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT
+          COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT
+          COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT
+          COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT
+          COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT
+          COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT 
+          COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT
+          COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT
+          COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT
+          COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT
+          COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT
+          COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT
+          COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT COMMENT 
+        </p>
+      </div>
+      <p class="comment-type">TYPE</p>
+    </div>
+
+   </div>
+  </div>
+    <div id="footer" class="footer">
+      <p style="font-family: 'Quicksand', sans-serif; font-weight: 500; color: #777777;">2020 Bergamota Sites LTDA &copy;</p><p style="font-family: 'Quicksand', sans-serif; font-weight: 500; color: #777777;">Fotos Retiradas da Internet</p>
+    </div>
+  </div>
+    </body>
+</html>

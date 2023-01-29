@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ganso Africano - Zoológico de Guarulhos</title>
+    <link rel="icon" href="../../../resources/icons/favicon.png">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
+    <link
+      href="https://fonts.googleapis.com/css?family=Permanent+Marker|Quicksand:300,500&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
+    <script type="text/javascript" src="../../../js/index.js"></script>
+  </head>
+
+  <body class="body" id="body">
+    <div
+      class="fixedtop"
+      id="fixedtop"
+    >
+      <nav class="menu">
+        <ul class="active">
+          <li><a href="">Início</a></li>
+          <li class="current-item"><a href="../../animais.html">Animais</a></li>
+          <li><a href="../../comochegar.html">Como Chegar</a></li>
+          <li><a href="../../duvidas.html">Dúvidas</a></li>
+          <li><a href="../../comentarios.html">Comentários</a></li>
+          <li><a href="../../sobre.html">Sobre</a></li>
+          <li><a href="../../../Ingles/index-english.html">English</a></li>
+          <li><a class="dark-toggle" id="dark-toggle" onclick="dark()">Modo Escuro</a></li>
+          <script type="text/Javascript">
+          function dark() {
+            if(document.getElementById("dark-toggle").textContent == "Modo Escuro"){
+              document.cookie = "; expires = Thu, 01 Jan 1970 00:00:00 GMT"
+              var element = document.getElementById("body");
+              element.classList.toggle("dark-mode");
+              var footer = document.getElementById("footer");
+              footer.classList.toggle("footer-dark");
+              document.getElementById("dark-toggle").textContent = "Modo Claro";
+              document.cookie = "dark-mode; path=/; expires= Thu, 21 Aug 2037 20:00:00 UTC";
+          } else if(document.getElementById("dark-toggle").textContent == "Modo Claro"){
+              document.cookie = "; expires = Thu, 01 Jan 1970 00:00:00 GMT"
+              var element = document.getElementById("body");
+              element.classList.toggle("dark-mode");
+              var footer = document.getElementById("footer");
+              footer.classList.toggle("footer-dark");
+              document.getElementById("dark-toggle").textContent = "Modo Escuro";
+              document.cookie = "light-mode; path=/; expires= Thu, 21 Aug 2037 20:00:00 UTC";
+          }}
+            </script>
+        </ul>
+        <a class="toggle-nav" href="#">&#9776;</a>
+      </nav>
+      <div class="mobiletitle">
+        <a href="./index-english.html">
+        <img class="mobile-image" src="https://i.imgur.com/MKZDyDK.png?1">
+      </a>
+      </div>
+    </div>
+    </div>
+    
+    <center><div class="profile-main">
+    <div class="profile-pic-div">
+      <img class="profile-img" src="https://42u8i86vdzg2dsu7e2e0yp91-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/African-Geese-500x500.jpg">
+    </div>
+    <h1 class="h1" class="profile-name">GANSO AFRICANO</h1></center>
+  </div>
+  <div id="page-container">
+      <div id="content-wrap">
+    <div id="text" class="text" style="margin: 1em;">
+     <p>O ganso-africano (Anser cygnoides) é um anatídeo em perigo
+        de extinção no estado selvagem, 
+       em virtude do alto grau de domesticação e de difusão em muitos países. Esta espécie vive ao
+        longo de charcos, lagos e rios próximos a prados e pradarias. Vivem cerca de 
+        dezoito anos, atingindo a maturidade sexual ainda no primeiro ano. Os casais que se formam duram a vida toda. Os ninhos são construídos no solo, fazendo posturas de até 8 ovos por ninhada. Alimentam-se de gramíneas, folhagens, sementes, frutos e pequenos insectos. São presas frequentes de raposas, felinos e aves de rapina.</p>
+        <p style="font-size: 0.8em; text-align: center;"><a class="link" href="https://www.efowl.com/product/african-geese/">Fonte da Imagem</a></p>
+        <br><a class="link" href="../../animais.html"><p><b>voltar...</b></p></a>
+    </div>
+
+  </div>
+    <div id="footer" class="footer">
+      <p style="font-family: 'Quicksand', sans-serif; font-weight: 500; color: #777777;">2020 Bergamota Sites LTDA &copy;</p><p style="font-family: 'Quicksand', sans-serif; font-weight: 500; color: #777777;">Fotos Retiradas da Internet</p>
+    </div>
+  </div>
+    </body>
+</html>

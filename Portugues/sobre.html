@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sobre - Zoológico de Guarulhos</title>
+    <link rel="icon" href="../resources/icons/favicon.png">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
+    <link
+      href="https://fonts.googleapis.com/css?family=Permanent+Marker|Quicksand:300,500&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
+    <script type="text/javascript" src="../js/index.js"></script>
+  </head>
+
+  <body class="body" id="body">
+    <div
+      class="fixedtop"
+      id="fixedtop"
+    >
+      <nav class="menu">
+        <ul class="active">
+          <li><a class="options"href="../index.html">Início</a></li>
+          <li><a class="options"href="./animais.html">Animais</a></li>
+          <li><a class="options"href="./comochegar.html">Como Chegar</a></li>
+          <li><a class="options"href="">Dúvidas</a></li>
+          <li><a class="options"href="./comentarios.html">Comentários</a></li>
+          <li class="current-item"><a>Sobre</a></li>
+          <li><a class="options"href="../Ingles/index-english.html">English</a></li>
+          <li><a class="dark-toggle" id="dark-toggle" onclick="dark()">Modo Escuro</a></li>
+          <script type="text/Javascript">
+          function dark() {
+            if(document.getElementById("dark-toggle").textContent == "Modo Escuro"){
+              document.cookie = "; expires = Thu, 01 Jan 1970 00:00:00 GMT"
+              var element = document.getElementById("body");
+              element.classList.toggle("dark-mode");
+              var footer = document.getElementById("footer");
+              footer.classList.toggle("footer-dark");
+              document.getElementById("dark-toggle").textContent = "Modo Claro";
+              document.cookie = "dark-mode; path=/; expires= Thu, 21 Aug 2037 20:00:00 UTC";
+          } else if(document.getElementById("dark-toggle").textContent == "Modo Claro"){
+              document.cookie = "; expires = Thu, 01 Jan 1970 00:00:00 GMT"
+              var element = document.getElementById("body");
+              element.classList.toggle("dark-mode");
+              var footer = document.getElementById("footer");
+              footer.classList.toggle("footer-dark");
+              document.getElementById("dark-toggle").textContent = "Modo Escuro";
+              document.cookie = "light-mode; path=/; expires= Thu, 21 Aug 2037 20:00:00 UTC";
+          }}
+            </script>
+        </ul>
+        <a class="toggle-nav" href="#">&#9776;</a>
+      </nav>
+      <div class="mobiletitle">
+        <a href="../index.html">
+        <img class="mobile-image" src="https://i.imgur.com/MKZDyDK.png?1">
+      </a>
+      </div>
+    </div>
+    </div>
+    <div id="page-container">
+    <div id="content-wrap">
+    <div id="text" class="text">
+      <h1 class="h1" style="text-align: center;">SOBRE O ZOOLÓGICO</h1>
+      <p>O Zoológico de Guarulhos, criado em 1981, mantém cerca de 500 animais, de 100 diferentes espécies, priorizando a fauna nacional, com 91% de espécies nativas. O Zoo participa de programas de conservação de espécies ameaçadas, realiza pesquisas científicas e atividades de educação para conservação. Os animais recebem cuidados constantes, tanto preventivos como curativos, por uma equipe de biólogos, veterinários e tratadores, incumbidos da manutenção de sua saúde e bem estar.</p>
+    
+      <table class="about-imgs"><tr>
+      <td><img class="about-img" src="https://www.guarulhos.sp.gov.br/zoologico/images/zoo/figura1.jpg"></td>
+      <td><img class="about-img" src="https://www.guarulhos.sp.gov.br/zoologico/images/zoo/figura2.jpg"></td></tr></table>
+      
+      <p>A estrutura do zoo conta com 59 recintos de exposição, setor extra e quarentenário, que abrigam os animais residentes e animais recém-chegados e em tratamento. Há no local clínica veterinária e área de manejo, com salas de atendimento, laboratório, sala de cirurgia, área de internação e sala de necropsia, e também um setor de alimentação e biotério para produção de alimentos vivos.</p>
+      <br>
+      
+      <table class="about-imgs"><tr>
+      <td><img class="about-img" src="https://www.guarulhos.sp.gov.br/zoologico/images/zoo/figura3.jpg"></td>
+      <td><img class="about-img" src="https://www.guarulhos.sp.gov.br/zoologico/images/zoo/figura4.jpg"></td></td></table>
+
+      <p>O Zoo possui uma área de mata e lagos que atraem muitas espécies de aves de vida livre, que podem ser observadas e fotografadas facilmente, tornando o passeio ainda mais agradável.</p>
+
+      <h1 class="h1" style="text-align: center;">OS CRIADORES DO SITE</h1>
+      <p>Este site foi um projeto dos alunos Augusto Pereira Teixeira, Marcos Cesar Abbegg Furrakama, Leonardo Siqueira Bezuti e Guilherme Alves Marques, do Colégio Eniac, com o intuito de atualizar o site do Zoológico. <br><br><b>Agradecimentos:</b><br>Gustavo Goelzer Gonçalves, que compartilhou o Logo do site, assim como as informações dos animais.<br>Orientadores Nelson e Lúcio Luzeti, que foram cruciais no desenvolvimento do site, dando informações gradativamente mais complexas para um melhor desenvolvimento.</p>      
+    </div>
+
+    </div>
+    <div id="footer" class="footer">
+      <p style="font-family: 'Quicksand', sans-serif; font-weight: 500; color: #777777;">2020 Bergamota Sites LTDA &copy;</p><p style="font-family: 'Quicksand', sans-serif; font-weight: 500; color: #777777;">Fotos Retiradas da Internet</p>
+    </div>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arara Canindé - Zoológico de Guarulhos</title>
+    <link rel="icon" href="../../../resources/icons/favicon.png">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
+    <link
+      href="https://fonts.googleapis.com/css?family=Permanent+Marker|Quicksand:300,500&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
+    <script type="text/javascript" src="../../../js/index.js"></script>
+  </head>
+
+  <body class="body" id="body">
+    <div
+      class="fixedtop"
+      id="fixedtop"
+    >
+      <nav class="menu">
+        <ul class="active">
+          <li><a href="">Início</a></li>
+          <li class="current-item"><a href="../../animais.html">Animais</a></li>
+          <li><a href="../../comochegar.html">Como Chegar</a></li>
+          <li><a href="../../duvidas.html">Dúvidas</a></li>
+          <li><a href="../../comentarios.html">Comentários</a></li>
+          <li><a href="../../sobre.html">Sobre</a></li>
+          <li><a href="../../../Ingles/index-english.html">English</a></li>
+          <li><a class="dark-toggle" id="dark-toggle" onclick="dark()">Modo Escuro</a></li>
+          <script type="text/Javascript">
+          function dark() {
+            if(document.getElementById("dark-toggle").textContent == "Modo Escuro"){
+              document.cookie = "; expires = Thu, 01 Jan 1970 00:00:00 GMT"
+              var element = document.getElementById("body");
+              element.classList.toggle("dark-mode");
+              var footer = document.getElementById("footer");
+              footer.classList.toggle("footer-dark");
+              document.getElementById("dark-toggle").textContent = "Modo Claro";
+              document.cookie = "dark-mode; path=/; expires= Thu, 21 Aug 2037 20:00:00 UTC";
+          } else if(document.getElementById("dark-toggle").textContent == "Modo Claro"){
+              document.cookie = "; expires = Thu, 01 Jan 1970 00:00:00 GMT"
+              var element = document.getElementById("body");
+              element.classList.toggle("dark-mode");
+              var footer = document.getElementById("footer");
+              footer.classList.toggle("footer-dark");
+              document.getElementById("dark-toggle").textContent = "Modo Escuro";
+              document.cookie = "light-mode; path=/; expires= Thu, 21 Aug 2037 20:00:00 UTC";
+          }}
+            </script>
+        </ul>
+        <a class="toggle-nav" href="#">&#9776;</a>
+      </nav>
+      <div class="mobiletitle">
+        <a href="./index-english.html">
+        <img class="mobile-image" src="https://i.imgur.com/MKZDyDK.png?1">
+      </a>
+      </div>
+    </div>
+    </div>
+    
+    <center><div class="profile-main">
+    <div class="profile-pic-div">
+      <img class="profile-img" src="http://www.zoo.df.gov.br/wp-content/uploads/2020/02/Arara-Canind%C3%A9-Tiago-Severo-1.jpg">
+    </div>
+    <h1 class="h1" class="profile-name">ARARA CANINDÉ</h1></center>
+  </div>
+  <div id="page-container">
+      <div id="content-wrap">
+    <div id="text" class="text" style="margin: 1em;">
+        <p><b>Ordem:</b> Psittaciformes<br><br>
+          <b>Família:</b> Psittacidae<br><br>
+          <b>Nome popular:</b> Arara Canindé<br><br>
+          <b>Nome científico:</b> Ara ararauna<br><br>
+          <b>Distrib. geográfica:</b> Desde a Amazônia até o Paraná, sendo que antigamente chegava até Santa Catarina. Encontrada também no leste do Panamá e norte da Colombia, Venezuela, Guianas, Perú, Bolivia, até o norte de Argentina e Paraguai e no oeste do Equador.<br><br>
+          <b>Hábitos alimentares:</b> Migra em certas épocas do ano, em busca de alimento. Desloca-se a grandes distâncias durante o dia, entre os locais de descanso e de alimentação. Alimenta-se basicamente de sementes, frutas e nozes.<br><br>
+          <b>Reprodução:</b> entre dezembro e maio em buracos no tronco de grandes palmeiras mortas, entre 10 e 25 metros de altura, pondo 2 ovos, que são incubados por 24-26 dias.</p>
+          <p style="font-size: 0.8em; text-align: center;"><a class="link" href="https://www.wikiaves.com.br/wiki/arara-caninde">Fonte</a></p>
+         <p style="font-size: 0.8em; text-align: center;"><a class="link" href="http://www.zoo.df.gov.br/arara-caninde-ara-ararauna/">Fonte da Imagem</a></p>
+         <br><a class="link" href="../../animais.html"><p><b>voltar...</b></p></a>
+    </div>
+
+  </div>
+    <div id="footer" class="footer">
+      <p style="font-family: 'Quicksand', sans-serif; font-weight: 500; color: #777777;">2020 Bergamota Sites LTDA &copy;</p><p style="font-family: 'Quicksand', sans-serif; font-weight: 500; color: #777777;">Fotos Retiradas da Internet</p>
+    </div>
+  </div>
+    </body>
+</html>

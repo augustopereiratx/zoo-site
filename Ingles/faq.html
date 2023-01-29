@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FAQ - Zoológico de Guarulhos</title>
+    <link rel="icon" href="../resources/icons/favicon.png">
+    <meta charset="UTF-8" />
+    <style type="text/css">
+      td {
+        padding: 0 20px;
+        vertical-align: top;
+      }
+      body {
+        overflow-x: hidden;
+      }
+      @media screen and (min-width: 53.75em) {
+      td
+      {
+          padding:0 30px;
+          vertical-align: top;
+      }
+    }
+
+      </style>
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
+    <link
+      href="https://fonts.googleapis.com/css?family=Permanent+Marker|Quicksand:300,500&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
+    <script type="text/javascript" src="../js/index-english.js"></script>
+    <script type="text/Javascript" src="../js/mobile-check.js"></script>
+  </head>
+
+  <body class="body" id="body">
+    <div
+      class="fixedtop"
+      id="fixedtop"
+    >
+      <nav class="menu">
+        <ul class="active">
+          <li><a class="options"href="index-english.html">Home</a></li>
+          <li><a class="options"href="animals.html">Animals</a></li>
+          <li><a class="options"href="directions.html">Directions</a></li>
+          <li class="current-item"><a>FAQ</a></li>
+          <li><a class="options"href="comments.html">Comments</a></li>
+          <li><a class="options"href="about.html">About</a></li>
+          <li><a class="options"href="../index.html">Português</a></li>
+          <li><a class="dark-toggle" id="dark-toggle" onclick="dark()">Dark Mode</a></li>
+          <script type="text/Javascript">
+          function dark() {
+            if(document.getElementById("dark-toggle").textContent == "Dark Mode"){
+              document.cookie = "; expires = Thu, 01 Jan 1970 00:00:00 GMT"
+              var element = document.getElementById("body");
+              element.classList.toggle("dark-mode");
+              var footer = document.getElementById("footer");
+              footer.classList.toggle("footer-dark");
+              document.getElementById("dark-toggle").textContent = "Light Mode";
+              document.cookie = "dark-mode; path=/; expires= Thu, 21 Aug 2037 20:00:00 UTC";
+          } else if(document.getElementById("dark-toggle").textContent == "Light Mode"){
+              document.cookie = "; expires = Thu, 01 Jan 1970 00:00:00 GMT"
+              var element = document.getElementById("body");
+              element.classList.toggle("dark-mode");
+              var footer = document.getElementById("footer");
+              footer.classList.toggle("footer-dark");
+              document.getElementById("dark-toggle").textContent = "Dark Mode";
+              document.cookie = "light-mode; path=/; expires= Thu, 21 Aug 2037 20:00:00 UTC";
+          }}
+            </script>
+        </ul>
+        <a class="toggle-nav" href="#">&#9776;</a>
+      </nav>
+      <div class="mobiletitle">
+        <a href="./index-english.html">
+        <img class="mobile-image" src="https://i.imgur.com/MKZDyDK.png?1">
+      </a>
+      </div>
+    </div>
+    </div>
+    <div id="page-container">
+    <div id="content-wrap">
+    <div id="text" class="text">
+      <h1 class="h1" style="text-align: center;">FREQUENTLY ASKED QUESTIONS</h1>
+      
+       <div id="desktop" style="margin: 0 auto; width: 100vw; text-align: center;">
+        <table style="width: 45em; margin: 0 auto;">
+        <tr><td><p style="text-align: justify;"><b>1 - What are the opening hours of the zoo?</b></p>
+        <p style="text-align: justify;">The zoo is open from 9 AM to 5 PM, from Tuesdays to Sundays.</p></td>
+        
+        <td><p style="text-align: justify;"><b>2 - Does entrance require any payment?</b></p>
+        <p style="text-align: justify;">No, it does not. Entrance is completely free.</p></td></tr>
+        
+        <tr><td><p style="text-align: justify;"><b>3 - What is the best way to get to the zoo?</b></p>
+        <p style="text-align: justify;">You can come to the zoo by either your own means or with the aid of public transport. (see <a class="link" href="./directions.html">directions</a>)</p></td>
+        
+        <td><p style="text-align: justify;"><b>4 - Is there a snack bar or restaurant in the zoo?</b></p>
+        <p style="text-align: justify;">Unfortunately, the zoo does not offer these kinds of services, but it has an area for picnics.</p></td></tr>
+        
+        <tr><td><p style="text-align: justify;"><b>5 - Can my pet come to the zoo with me?</b></p>
+        <p style="text-align: justify;">No, it can not. We insist that you leave your pet at home, for your pet's safety as well as our animals'.</p></td>
+        
+        <td><p style="text-align: justify;"><b>6 - Can I feed the animals?</b></p>
+        <p style="text-align: justify;">The feeding of animals at the zoo is not permitted. They follow a balanced diet, where food is selected with quality and nutritional value in mind. Feeding them might make them sick.</p></td></tr>
+        
+        <tr><td><p style="text-align: justify;"><b>7 - Posso tocar nos animais no Zoológico?</b></p>
+        <p style="text-align: justify;">Não, todos os animais que vivem no Zoológico de Guarulhos são animais selvagens, portanto, seu comportamento é imprevisível. Para sua própria segurança, não toque nos animais, e respeite as áreas de afastamento de cada recinto.</p></td>
+        
+        <td><p style="text-align: justify;"><b>8 - Where do the animals come from?</b></p>
+        <p style="text-align: justify;">They can come from transfers from other institutions, births in the zoo, or rescues of very hurt animals in the city. The zoo never captures free wildlife.</p></td></tr>
+        
+        <tr><td><p style="text-align: justify;"><b>9 - Can I give an animal to the zoo?</b></p>
+        <p style="text-align: justify;">No. We do not accept animals. Any animal you to give has to be sent to the Triage Center of the State of São Paulo (CETAS).</p></td>
+        
+        <td><p style="text-align: justify;"><b>10 - If I find a hurt wild animal, can I ask the zoo for help?</b></p>
+        <p style="text-align: justify;">Yes, you can! Hurt animals, specially young animals, can be treated here. After they are treated, we try our best at rehabilitating them to set them free again.</p></td></tr>
+        
+        <tr><td><p style="text-align: justify;"><b>11 - Who takes care of the health of the animals? What happens when an animal gets sick?</b></p>
+        <p style="text-align: justify;">The zoo has a team of veterinarians, biologists and treaters that take care of the animals, performing exams, surgeries and treatments if necessary. There is a designated place in here where the animals stay until they can return to their enclosures.</p></td>
+        
+        <td><p style="text-align: justify;"><b>12 - Why are some animals sometimes not moving or sleeping for large amounts of time?</b></p>
+        <p style="text-align: justify;">All animals, like us, have their own ways of living. Some like monkeys, ferrets e otters have more agitated behaviors. Others like alligators, lizards, maned wolves, anteaters, lions, etc have calmer behaviors, either by their habits (nocturnal, diurnal, etc) or their own nature. Please refrain from bothering their sleep.</p></td></tr>
+        
+        <tr><td><p style="text-align: justify;"><b>13 - Why do some enclosures have little or no vegetation?</b></p>
+        <p style="text-align: justify;">The enclosure's vegetation depends on the lifestyle and behavior of each animal. There are heavier or more agitated ones that destroy vegetation. Destroyed vegetation is periodically remade by the Zoo.</p></td>
+        
+        <td><p style="text-align: justify;"><b>14 - Is there an area for bike or skateboard riding?</b></p>
+        <p style="text-align: justify;">There are areas for theses kinds of activities in the city. However, they are not permitted in the Zoo. There also are no areas for playing soccer or flying kites.</p></td></tr></table>
+          
+        <div style="width: 41.5em; margin: 0 auto;"><p style="text-align: justify;"><b>15 - Does the Zoo accept cats or dogs for adoption?</b></p>
+        <p style="text-align: justify;">Cats and dogs are domestic animals, therefore they should be sent to the right organizations, such as Zoonosis Control Centers or animal protection non-governmental organizations.</p></div>
+        </div>
+        <div id="mobile">
+            <p style="text-align: justify;"><b>1 - What are the opening hours of the zoo?</b></p>
+            <p style="text-align: justify;">The zoo is open from 9 AM to 5 PM, from Tuesdays to Sundays.</p>
+            
+            <p style="text-align: justify;"><b>2 - Does entrance require any payment?</b></p>
+            <p style="text-align: justify;">No, it does not. Entrance is completely free.</p>
+            
+            <p style="text-align: justify;"><b>3 - What is the best way to get to the zoo?</b></p>
+            <p style="text-align: justify;">You can come to the zoo by either your own means or with the aid of public transport. (see <a class="link" href="./directions.html">directions</a>)</p>
+            
+            <p style="text-align: justify;"><b>4 - Is there a snack bar or restaurant in the zoo?</b></p>
+            <p style="text-align: justify;">Unfortunately, the zoo does not offer these kinds of services, but it has an area for picnics.</p>
+            
+            <p style="text-align: justify;"><b>5 - Can my pet come to the zoo with me?</b></p>
+            <p style="text-align: justify;">No, it can not. We insist that you leave your pet at home, for your pet's safety as well as our animals'.</p>
+            
+            <p style="text-align: justify;"><b>6 - Can I feed the animals?</b></p>
+            <p style="text-align: justify;">The feeding of animals at the zoo is not permitted. They follow a balanced diet, where food is selected with quality and nutritional value in mind. Feeding them might make them sick.</p>
+            
+            <p style="text-align: justify;"><b>7 - Posso tocar nos animais no Zoológico?</b></p>
+            <p style="text-align: justify;">Não, todos os animais que vivem no Zoológico de Guarulhos são animais selvagens, portanto, seu comportamento é imprevisível. Para sua própria segurança, não toque nos animais, e respeite as áreas de afastamento de cada recinto.</p>
+            
+            <p style="text-align: justify;"><b>8 - Where do the animals come from?</b></p>
+            <p style="text-align: justify;">They can come from transfers from other institutions, births in the zoo, or rescues of very hurt animals in the city. The zoo never captures free wildlife.</p>
+            
+            <p style="text-align: justify;"><b>9 - Can I give an animal to the zoo?</b></p>
+            <p style="text-align: justify;">No. We do not accept animals. Any animal you to give has to be sent to the Triage Center of the State of São Paulo (CETAS).</p>
+            
+            <p style="text-align: justify;"><b>10 - If I find a hurt wild animal, can I ask the zoo for help?</b></p>
+            <p style="text-align: justify;">Yes, you can! Hurt animals, specially young animals, can be treated here. After they are treated, we try our best at rehabilitating them to set them free again.</p>
+            
+            <p style="text-align: justify;"><b>11 - Who takes care of the health of the animals? What happens when an animal gets sick?</b></p>
+            <p style="text-align: justify;">The zoo has a team of veterinarians, biologists and treaters that take care of the animals, performing exams, surgeries and treatments if necessary. There is a designated place in here where the animals stay until they can return to their enclosures.</p>
+            
+            <p style="text-align: justify;"><b>12 - Why are some animals sometimes not moving or sleeping for large amounts of time?</b></p>
+            <p style="text-align: justify;">All animals, like us, have their own ways of living. Some like monkeys, ferrets e otters have more agitated behaviors. Others like alligators, lizards, maned wolves, anteaters, lions, etc have calmer behaviors, either by their habits (nocturnal, diurnal, etc) or their own nature. Please refrain from bothering their sleep.</p>
+            
+            <p style="text-align: justify;"><b>13 - Why do some enclosures have little or no vegetation?</b></p>
+            <p style="text-align: justify;">The enclosure's vegetation depends on the lifestyle and behavior of each animal. There are heavier or more agitated ones that destroy vegetation. Destroyed vegetation is periodically remade by the Zoo.</p>
+            
+            <p style="text-align: justify;"><b>14 - Is there an area for bike or skateboard riding?</b></p>
+            <p style="text-align: justify;">There are areas for theses kinds of activities in the city. However, they are not permitted in the Zoo. There also are no areas for playing soccer or flying kites.</p>
+              
+            <p style="text-align: justify;"><b>15 - Does the Zoo accept cats or dogs for adoption?</b></p>
+            <p style="text-align: justify;">Cats and dogs are domestic animals, therefore they should be sent to the right organizations, such as Zoonosis Control Centers or animal protection non-governmental organizations.</p>
+            </div>
+        
+      </div>
+      </div>
+      <div id="footer" class="footer">
+        <p style="font-family: 'Quicksand', sans-serif; font-weight: 500; color: #777777;">2020 Bergamota Sites LTDA &copy;</p><p style="font-family: 'Quicksand', sans-serif; font-weight: 500; color: #777777;">Images Taken From The Internet</p>
+      </div>
+      </div>
+    </body>
+</html>

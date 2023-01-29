@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anacã - Zoológico de Guarulhos</title>
+    <link rel="icon" href="../../../resources/icons/favicon.png">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../../../styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
+    <link
+      href="https://fonts.googleapis.com/css?family=Permanent+Marker|Quicksand:300,500&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
+    <script type="text/javascript" src="../../../js/index.js"></script>
+  </head>
+
+  <body class="body" id="body">
+    <div
+      class="fixedtop"
+      id="fixedtop"
+    >
+      <nav class="menu">
+        <ul class="active">
+          <li><a href="">Iní­cio</a></li>
+          <li class="current-item"><a href="../../animais.html">Animais</a></li>
+          <li><a href="../../comochegar.html">Como Chegar</a></li>
+          <li><a href="../../duvidas.html">Dúvidas</a></li>
+          <li><a href="../../comentarios.html">Comentários</a></li>
+          <li><a href="../../sobre.html">Sobre</a></li>
+          <li><a href="../../../Ingles/index-english.html">English</a></li>
+          <li><a class="dark-toggle" id="dark-toggle" onclick="dark()">Modo Escuro</a></li>
+          <script type="text/Javascript">
+          function dark() {
+            if(document.getElementById("dark-toggle").textContent == "Modo Escuro"){
+              document.cookie = "; expires = Thu, 01 Jan 1970 00:00:00 GMT"
+              var element = document.getElementById("body");
+              element.classList.toggle("dark-mode");
+              var footer = document.getElementById("footer");
+              footer.classList.toggle("footer-dark");
+              document.getElementById("dark-toggle").textContent = "Modo Claro";
+              document.cookie = "dark-mode; path=/; expires= Thu, 21 Aug 2037 20:00:00 UTC";
+          } else if(document.getElementById("dark-toggle").textContent == "Modo Claro"){
+              document.cookie = "; expires = Thu, 01 Jan 1970 00:00:00 GMT"
+              var element = document.getElementById("body");
+              element.classList.toggle("dark-mode");
+              var footer = document.getElementById("footer");
+              footer.classList.toggle("footer-dark");
+              document.getElementById("dark-toggle").textContent = "Modo Escuro";
+              document.cookie = "light-mode; path=/; expires= Thu, 21 Aug 2037 20:00:00 UTC";
+          }}
+            </script>
+        </ul>
+        <a class="toggle-nav" href="#">&#9776;</a>
+      </nav>
+      <div class="mobiletitle">
+        <a href="./index-english.html">
+        <img class="mobile-image" src="https://i.imgur.com/MKZDyDK.png?1">
+      </a>
+      </div>
+    </div>
+    </div>
+    <center><div class="profile-main">
+    <div class="profile-pic-div">
+      <img class="profile-img" src="https://www.guarulhos.sp.gov.br/zoologico/images/animais/foto61t.jpg">
+    </div>
+    <h1 class="h1" class="profile-name">ANACÃ</h1></center>
+  </div>
+  <div id="page-container">
+  <div id="content-wrap">
+    <div id="text" class="text" style="margin: 1em;">
+        <p><b>Ordem:</b> Psittaciformes<br><br>
+        <b>Família:</b> Psittacidae<br><br>
+        <b>Nome popular:</b> Anacã<br><br>
+        <b>Nome científico:</b> Deroptyus accipitrinus<br><br>
+        <b>Distrib. geográfica:</b> Descontínua. Amazônia, do sul da Venezuela até o nordeste do Equador e Peru, Guianas e a amazônia brasileira.<br><br>
+        <b>Hábitos alimentares:</b> Alimenta-se de frutas de palmeiras, flores e sementes. Apreciando os cocos de bacaba e das embaúbas, além de frutas silvestres.<br><br>
+        <b>Reprodução:</b> Faz ninho em buracos de árvores mortas, inclusive naqueles feitos por pica-paus, a partir do mês de fevereiro.</p>
+        <p style="font-size: 0.8em; text-align: center;"><a class="link" href="https://www.wikiaves.com.br/wiki/anaca">Fonte</a></p>
+        
+        <p style="font-size: 0.8em; text-align: center;"><a class="link" href="https://www.marcvanwoerkom.com/marc-brazil/red">Fonte da Imagem</a></p>
+        <br><a class="link" href="../../animais.html"><p><b>voltar...</b></p></a>
+      </div>
+  </div>
+    <div id="footer" class="footer">
+      <p style="font-family: 'Quicksand', sans-serif; font-weight: 500; color: #777777;">2020 Bergamota Sites LTDA &copy;</p><p style="font-family: 'Quicksand', sans-serif; font-weight: 500; color: #777777;">Fotos Retiradas da Internet</p>
+    </div>
+  </div>
+    </body>
+</html>
